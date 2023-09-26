@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	#div_top{
+    	background-color :#04AA6D;
+        border-radius: 4px;
+        margin : 0px;
+        padding-left: 15px;
+        /* padding: 1px; */
+        float: top
+    }
+    
+	#div_left{
+    	/* background-color : red; */
+        border-radius: 4px;
+        float: left
+    }
+    
+    #div_center{
+    	/* background-color : yellow; */
+        /*float: left*/
+        border-radius: 4px;
+        margin: 0 210px;
+    }
+    
+    #div_right{
+    	background-color : #32a4e7;
+        /*float: left*/
+        padding: 10px;
+        width: 180px;
+        bottom: 340px;
+        top: 110px;
+        right: 0;
+        position: absolute;
+        border-radius: 4px;
+        color:white;
+    }
+
+    #div_footer{
+        background-color: #f1f1f1;
+        border-radius: 4px;
+        padding: 1px;
+    }
+
+    #menulist{
+        margin:0;
+        padding:0;
+    }
+
+    .menuitem {
+        border-radius : 4px;
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;
+        list-style-type: none;
+        padding: 2px;
+        cursor: pointer;
+        width: 180px;
+        height: 30px;
+
+    }
+
+    .menuitem:hover {
+        background-color: #ffffff;
+    }
+
+    .menuitem:first-child {
+        background-color:#04AA6D;
+        color: white;
+        font-weight:bold;
+    }
+
+</style>
+</head>
+<body>
+	<div>
+    	<div id="div_top">
+        	<h1 style="color: white;"> Welcome to 박원진's Homepage(22000286)</h1>
+      		<p style="color: white;">Use the menu to select different Stylesheets</p>
+        </div>
+        
+        <div>
+        	<div id = "div_left">
+               <ul id="menulist">
+                <li class="menuitem"> <a href="/style1.html">Stylesheet 1</a></li>
+                <li class="menuitem"> <a href="/style2.html">Stylesheet 2</a></li>
+                 <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+                 <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+                 <li class="menuitem" onclick="noStyles()">No Stylesheet
+               </ul>
+              </div>
+            	
+        </div>
+            	
+            <div id = "div_center">
+            	<h1>Same Page Different Stylesheets</h1>
+            	<p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                    <a href="/style1.html">Stylesheet 1</a>,
+                    <a href="/style2.html">Stylesheet 2</a>,
+                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+                    <a href="#" onclick="reStyle(3);return false">Stylesheet4</a></p>
+
+				<h1>No Styles</h1>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+<a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
+            </div>
+            
+            <div id = "div_right">
+            	<h1>Side-Bar</h1>
+            	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+            </div>
+        </div>
+        
+        <div id = "div_footer">
+        	<div>
+            	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+        </div>
+    </div>
+    
+   
+
+</body>
+</html>

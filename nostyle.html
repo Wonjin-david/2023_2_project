@@ -3,61 +3,36 @@
 <head>
 <title>Page Title</title>
 <style>
-	#div_top{
-    	background-color :#04AA6D;
-        float: top
-    }
-    
-	#div_left{
-    	/* background-color : red; */
-        
-        float: left
-    }
-    
-    #div_center{
-    	/* background-color : yellow; */
-        /*float: left*/
-        
-        margin: 0 210px;
-    }
-    
-    #div_right{
-    	background-color : #32a4e7;
-        /*float: left*/
-        padding: 10px;
-        width: 180px;
-        bottom: 200px;
-        top: 110px;
-        right: 0;
-        position: absolute;
-        color:white;
-    }
+
 </style>
 </head>
 <body>
 	<div>
     	<div id="div_top">
-        	<h1 style="color: white;"> Welcome to My Homepage</h1>
-      		<p style="color: white;">Use the menu to select different Stylesheets</p>
+        	<h1 style="color: black;"> Welcome to 박원진's Homepage(22000286)</h1>
+      		<p style="color: black;">Use the menu to select different Stylesheets</p>
         </div>
         
         <div>
         	<div id = "div_left">
-            	<p>&#8226; Stylesheet 1</p>
-                <p>&#8226; Stylesheet 2</p>
-                <p>&#8226; Stylesheet 3</p>
-                <p>&#8226; Stylesheet 4</p>
-                <p>&#8226; No Stylesheet</p>
+               <ul id="menulist">
+                <li class="menuitem"> <a href="/style1.html">Stylesheet 1</a></li>
+                <li class="menuitem"> <a href="/style2.html">Stylesheet 2</a></li>
+                 <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
+                 <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
+                 <li class="menuitem" onclick="noStyles()">No Stylesheet
+               </ul>
+              </div>
             	
-            </div>
+        </div>
             	
             <div id = "div_center">
             	<h1>Same Page Different Stylesheets</h1>
             	<p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-<a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-      <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
-      <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-      <a href="#" onclick="reStyle(3);return false">Stylesheet4</a></p>
+                    <a href="/style1.html">Stylesheet 1</a>,
+                    <a href="/style2.html">Stylesheet 2</a>,
+                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+                    <a href="#" onclick="reStyle(3);return false">Stylesheet4</a></p>
 
 				<h1>No Styles</h1>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
